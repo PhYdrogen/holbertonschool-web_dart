@@ -4,7 +4,7 @@ int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
   teamA.entries.forEach((entry) {
     if ((entry.key) == "Free throws") {
       teamA_total_score += entry.value;
-    } else if ((entry.key) == "") {
+    } else if ((entry.key) == "2 pointers") {
       teamA_total_score += entry.value * 2;
     } else {
       teamA_total_score += entry.value * 3;
@@ -13,7 +13,7 @@ int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
   teamB.entries.forEach((entry) {
     if ((entry.key) == "Free throws") {
       teamB_total_score += entry.value;
-    } else if ((entry.key) == "") {
+    } else if ((entry.key) == "2 pointers") {
       teamB_total_score += entry.value * 2;
     } else {
       teamB_total_score += entry.value * 3;
